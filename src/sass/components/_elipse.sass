@@ -1,0 +1,49 @@
+.elipse-yellow
+    width: 13.6rem
+    height: 13.6rem
+    border-radius: 50%
+    background: linear-gradient(180deg, #FEDF8B 0%, #FFC16B 100%), linear-gradient(180deg, #FFE6A2 0%, #F9D678 100%)
+    box-shadow: -4px 1px 80px rgba(246, 216, 135, 0.7) 
+    &_registration
+        position: absolute
+        top: -3rem
+        left: 6rem
+        z-index: 5
+    &_serving
+        position: absolute
+        top: 0rem
+        right: 3.5rem
+    &_shopping-cards
+        position: absolute
+        bottom: 12rem
+        left: -3rem
+        z-index: 1
+        width: 14.7rem
+        height: 14.7rem
+    @include respond(Large)
+        display: none
+
+    
+.elipse-green
+    width: 11rem
+    height: 11rem
+    border-radius: 50%
+    background: linear-gradient(176.15deg, #8EE7CA 19.68%, #87D2BA 96.85%)
+    box-shadow: 0px 4px 70px rgba(155, 215, 195, 0.8)
+    &_registration
+        position: absolute
+        top: 26rem
+        left: 50.5rem
+    &_discover
+        position: absolute
+        top: 0
+        left: 0
+    &_shopping-cards
+        position: absolute
+        top: 25rem
+        right: -3rem
+        z-index: 1
+        width: 13.9rem
+        height: 13.9rem
+    @include respond(Large)
+        display: none

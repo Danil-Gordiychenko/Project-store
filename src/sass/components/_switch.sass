@@ -1,0 +1,60 @@
+.switch 
+    position: relative
+    display: inline-block
+    width: 5.8rem
+    height: 2.9rem  
+
+
+/* Hide default HTML checkbox */
+.switch input 
+    display:none
+
+    
+/* The slider */
+.slider-switch
+    position: absolute
+    cursor: pointer
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #43DDAA
+    -webkit-transition: .3s
+    transition: .3s
+
+
+.slider-switch:before 
+    position: absolute
+    content: ""
+    width: 1.7rem
+    height: 1.6rem
+    left: .649rem
+    bottom: .649rem
+    background-color: white
+    -webkit-transition: .4s
+    transition: .4s
+
+
+input:checked + .slider-switch 
+    background-color: #43DDAA
+
+
+input:focus + .slider-switch
+    box-shadow: 0 0 .1rem #43DDAA
+
+
+input:checked + .slider-switch:before 
+    -webkit-transform: translateX(2.7rem)
+    -ms-transform: translateX(2.7rem)
+    transform: translateX(2.7rem)
+
+
+/* Rounded sliders */
+.slider-switch.round 
+    border-radius: .6rem
+
+
+.slider-switch.round:before 
+    border-radius: .3rem
+
+        

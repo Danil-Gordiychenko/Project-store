@@ -1,0 +1,52 @@
+.shopping-cards
+    display: grid
+    grid-template-columns: repeat(3, minmax(min-content, 36.1rem))
+    grid-gap: 3.074rem
+    padding: 0 2rem
+    position: relative
+    @include respond(Large)
+        width: 60vw
+        grid-template-columns: repeat(auto-fit, minmax(36.1rem, 1fr))
+
+.shopping-cards-box
+    display: flex
+    justify-content: center
+
+.shopping-card
+    display: grid
+    grid-template-rows: repeat(6, minmax(min-content, 7.049rem))
+    justify-items: center
+    border: .1rem solid rgba(0, 0, 0, 0.1)
+    border-radius: 1.5rem
+    background: #fff
+    padding: 3.5rem
+    z-index: 10
+    &__text-box
+        display: flex
+        width: 30.3rem
+        align-items: center
+        justify-content: space-between
+        &_last
+            margin-bottom: 4.22rem
+        &-1
+            display: flex
+            align-items: center  
+    &_2
+        box-shadow: 0px 20px 100px rgba(2, 18, 6, 0.15) 
+    &__hr-box
+        display: flex
+        position: relative
+        font-weight: 400
+        opacity: 0.5
+        align-items: center
+        &__hr
+            height: .5px
+            position: absolute
+            width: 100%
+            opacity: 0.5
+    &__icon
+        width: 1.8rem
+        height: 1.8rem
+        margin-right: .865rem
+    &__title-box
+        text-align: center

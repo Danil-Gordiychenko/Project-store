@@ -1,0 +1,63 @@
+.registration
+    display: flex
+    justify-content: center
+    margin-bottom: 15.5rem
+    &__box
+        display: flex
+        justify-content: center
+        width: 100%
+    &__group
+        width: 47.2rem
+        background: #FFFFFF
+        border-radius: .6rem
+        filter: drop-shadow(-5px 5px 45px rgba(2, 18, 6, 0.15))
+        display: flex
+        justify-content: space-between
+        padding: .6rem .6rem .6rem 2.4rem
+        margin-bottom: 3.55rem
+    &__left
+        width: 51rem
+        padding-left: 2rem
+    &__right
+        position: relative
+        width: 66rem
+        &__img
+            width: 65rem
+            position: absolute
+            transform: translateY(-3rem)
+            z-index: 10
+    &__input
+        border: none
+        width: 70%
+        opacity: 0.5
+        padding-left: .5rem 
+        background: $color-white
+        &:focus-visible
+            outline: none
+            border-bottom: .3rem solid #66D763
+        &:focus:invalid
+            border-bottom: .3rem solid #D76363
+    @include respond(Medium)
+        &__left
+            width: 51rem
+        &__right
+            overflow: hidden
+    @include respond(Extra-small)
+        &__left
+            width: 70vw
+            text-align: center
+        &__right
+            display: none
+        &__group
+            margin: 0 auto 1.5rem auto
+             
+    
+.download
+    display: flex
+    gap: 3rem 
+    @include respond(Extra-small)
+        justify-content: center
+
+.download a img
+    height: 3rem
+        

@@ -1,0 +1,27 @@
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+
+html
+    font-size: 62.5%
+    @include respond(Extra-large)
+        font-size: 56.25%
+    @include respond(Large)
+        font-size: 50%
+    @include respond(Medium)
+        font-size: 40%
+    @include respond(Small)
+        font-size: 35%
+    @include respond(Extra-extra-large)
+        font-size: 75%
+    
+
+
+body
+    padding-top: 3.5rem
+
+
+.container
+    z-index: 0
